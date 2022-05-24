@@ -1,0 +1,24 @@
+<script src="/javascripts/roll.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<form class="jumbotron" id="startGame" method="POST">
+    <div class="h1 text-center">{{title}}</div><br>
+    <div class="h4 text-center" for="Game">Game type: {{type}}</div><br>
+    <div class="h4 text-center" for="player1"> Player 1: {{player1}}
+        <input id="bet1" type="number" name="bet1" placeholder="Your bet"><br><br>
+        score: {{score1}}
+    </div><br>
+    <div class="h4 text-center" for="player2"> Player 2: {{player2}}
+        <input id="bet2" type="number" name="bet2" placeholder="Your bet"><br><br>
+        score: {{score2}}
+    </div><br>
+    <div class="h4 text-center" for="player3"> Player 3: {{player3}}
+        <input id="bet3" type="number" name="bet3" placeholder="Your bet"><br><br>
+        score: {{score3}}
+    </div><br>
+    <div class="text-center">
+        <button type="submit" id="roll_button" class="btn btn-success btn-lg" onclick="roll(event)">Roll</button>
+    </div>
+</form>
+
+
+
